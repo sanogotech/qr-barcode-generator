@@ -1,14 +1,15 @@
 package com.ricardogeek.config;
 
-import com.ricardogeek.generator.BarcodeGenerator;
-import com.ricardogeek.generator.QrCodeGenerator;
+import java.awt.image.BufferedImage;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.http.converter.BufferedImageHttpMessageConverter;
 import org.springframework.http.converter.HttpMessageConverter;
 
-import java.awt.image.BufferedImage;
+import com.ricardogeek.generator.BarcodeGenerator;
+import com.ricardogeek.generator.QrCodeGenerator;
 
 @Configuration
 @PropertySource("classpath:application.properties")
@@ -28,4 +29,7 @@ public class AppConfiguration {
     public QrCodeGenerator getQrCodeGenerator() {
         return new QrCodeGenerator();
     }
+    
+    
+
 }

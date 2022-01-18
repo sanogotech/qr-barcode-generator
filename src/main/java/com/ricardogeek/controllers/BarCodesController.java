@@ -16,7 +16,7 @@ import static org.springframework.http.MediaType.IMAGE_PNG_VALUE;
 @RestController
 public class BarCodesController {
 
-    @GetMapping(value = "/barcodes/{type}/{barcode}", produces = IMAGE_PNG_VALUE)
+    @GetMapping(value = "/barcodes/{type}/{barcode}", produces = {IMAGE_PNG_VALUE , "application/hal+json"}  )
     public ResponseEntity<BufferedImage> generate(@PathVariable("type") final String type,
                                                   @PathVariable("barcode") final String barcodeText,
                                                   @Autowired BarcodeGenerator barcodeGenerator) {
