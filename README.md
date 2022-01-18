@@ -37,3 +37,10 @@ Generates a QRCode taking the following parameters into consideration:
 This code is referenced in my recent blog entry:
 
 https://ricardogeek.com/como-generar-codigos-de-barras-y-qr-en-java/
+
+##  API Docs
+
+- http://localhost:8080/swagger-ui/index.html
+
+## Urls
+- https://www.baeldung.com/spring-rest-openapi-documentation
