@@ -20,7 +20,7 @@ Generates a barcode taking the following parameters into consideration:
 
 **barcodeText** is any text you'd like
 
-*Example:* http://localhost:8080/barcodes/PDF417/313131
+*Example:* http://localhost:8088/barcodes/PDF417/313131
 
 ## [GET] /qrcodes/{qrCodeText}/{width}/{height}
 
@@ -32,15 +32,20 @@ Generates a QRCode taking the following parameters into consideration:
 
 **height** the resulting inage height
 
-*Example:* http://localhost:8080/qrcodes/www.googe.com/350/350
+*Example:* http://localhost:8088/qrcodes/www.googe.com/350/350
 
 This code is referenced in my recent blog entry:
 
 https://ricardogeek.com/como-generar-codigos-de-barras-y-qr-en-java/
 
+## Run
+``
+ mvn  spring-boot:run
+``
+
 ##  API Docs
 
-- http://localhost:8080/swagger-ui/index.html
+- http://localhost:8088/swagger-ui/index.html
 
 ## Urls
 - https://www.baeldung.com/spring-rest-openapi-documentation
