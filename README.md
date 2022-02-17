@@ -52,6 +52,7 @@ https://ricardogeek.com/como-generar-codigos-de-barras-y-qr-en-java/
 ```
 * http://localhost:8088/swagger-ui/index.html
 ```
+- https://editor.swagger.io/  to generate client and server
 
 ## Get image QRCODE With Curl
 
