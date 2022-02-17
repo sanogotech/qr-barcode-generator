@@ -20,7 +20,9 @@ Generates a barcode taking the following parameters into consideration:
 
 **barcodeText** is any text you'd like
 
+```
 *Example:* http://localhost:8088/barcodes/PDF417/313131
+```
 
 ## [GET] /qrcodes/{qrCodeText}/{width}/{height}
 
@@ -31,8 +33,10 @@ Generates a QRCode taking the following parameters into consideration:
 **width** the resulting image width
 
 **height** the resulting inage height
+```
 
 *Example:* http://localhost:8088/qrcodes/www.googe.com/350/350
+```
 
 This code is referenced in my recent blog entry:
 
@@ -40,7 +44,17 @@ https://ricardogeek.com/como-generar-codigos-de-barras-y-qr-en-java/
 
 ## Run
 
+```
 * mvn spring-boot:run
+```
 
 # Doc API
-* http://localhost:8088/swagger-ui/
+```
+* http://localhost:8088/swagger-ui/index.html
+```
+
+## Get image QRCODE With Curl
+
+```
+curl -X "GET" "http://localhost:8088/qrcodes/cie/350/350" -H "accept: image/png"  --output myqrcode.png
+```
